@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Список покупок</h1>
+        <form id="shopping-list-form">
+            <div id="shopping-list"></div>
+            <textarea id="notes" placeholder="Заметки..."></textarea>
+            <hr>
+            <label>
+                <input type="checkbox" id="toggle-all">
+                Включить/выключить все
+            </label>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    <script src="service-worker.js"></script>
+</body>
+</html>
