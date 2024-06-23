@@ -2,13 +2,13 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('shopping-list-cache').then(cache => {
             return cache.addAll([
-                '/',
-                '/index.html',
-                '/styles.css',
-                '/app.js',
-                '/manifest.json',
-                '/icon-192x192.png',
-                '/icon-512x512.png'
+                '/shopping-list/',
+                '/shopping-list/index.html',
+                '/shopping-list/styles.css',
+                '/shopping-list/app.js',
+                '/shopping-list/manifest.json',
+                '/shopping-list/icon-192x192.png',
+                '/shopping-list/icon-512x512.png'
             ]);
         })
     );
